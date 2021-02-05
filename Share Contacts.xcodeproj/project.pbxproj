@@ -14,6 +14,7 @@
 		CEAB2D4D25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4B25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld */; };
 		CEAB2D4F25CDD3D7008F0E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAB2D4E25CDD3D7008F0E78 /* Assets.xcassets */; };
 		CEAB2D5225CDD3D7008F0E78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAB2D5025CDD3D7008F0E78 /* LaunchScreen.storyboard */; };
+		CEAB2D5C25CDD658008F0E78 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D5B25CDD658008F0E78 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CEAB2D4E25CDD3D7008F0E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAB2D5125CDD3D7008F0E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAB2D5325CDD3D7008F0E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAB2D5B25CDD658008F0E78 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		CEAB2D4125CDD3D6008F0E78 /* Share Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB2D5A25CDD641008F0E78 /* Models */,
 				CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */,
 				CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */,
 				CEAB2D4625CDD3D6008F0E78 /* ViewController.swift */,
@@ -68,6 +71,14 @@
 				CEAB2D4B25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld */,
 			);
 			path = "Share Contacts";
+			sourceTree = "<group>";
+		};
+		CEAB2D5A25CDD641008F0E78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB2D5B25CDD658008F0E78 /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			files = (
 				CEAB2D4D25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld in Sources */,
 				CEAB2D4725CDD3D6008F0E78 /* ViewController.swift in Sources */,
+				CEAB2D5C25CDD658008F0E78 /* Contact.swift in Sources */,
 				CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */,
 				CEAB2D4525CDD3D6008F0E78 /* SceneDelegate.swift in Sources */,
 			);
