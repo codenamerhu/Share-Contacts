@@ -6,10 +6,18 @@
 //
 
 import Foundation
+import Contacts
 
 class ContactsViewModel {
     
+    var cStore: CNContactStore?
+    
     func ferchedContactcs() {
         
+        cStore = CNContactStore()
+        
+        cStore?.requestAccess(for: .contacts, completionHandler: <#T##(Bool, Error?) -> Void#>)
+        
     }
+    
 }

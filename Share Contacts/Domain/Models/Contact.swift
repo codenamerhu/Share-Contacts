@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Contact {
+struct MyContact {
     var firstName       : String
     var lastName        : String
     var contactImage    : UIImage
