@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8E760625CF2AF200459EDD /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */; };
 		CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */; };
 		CEAB2D4525CDD3D6008F0E78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */; };
 		CEAB2D4725CDD3D6008F0E78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4625CDD3D6008F0E78 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		CEAB2D3F25CDD3D6008F0E78 /* Share Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8E75FF25CF0A2800459EDD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CE8E760025CF0ABA00459EDD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB2D5A25CDD641008F0E78 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CE8E760125CF0AC400459EDD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E760225CF0ACF00459EDD /* Views */,
+				CE8E760325CF0AD700459EDD /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE8E760225CF0ACF00459EDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE8E760325CF0AD700459EDD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE8E760425CF0AEC00459EDD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		CEAB2D3625CDD3D6008F0E78 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +108,9 @@
 		CEAB2D4125CDD3D6008F0E78 /* Share Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				CEAB2D5A25CDD641008F0E78 /* Models */,
+				CE8E760425CF0AEC00459EDD /* Data */,
+				CE8E760125CF0AC400459EDD /* Presentation */,
+				CE8E760025CF0ABA00459EDD /* Domain */,
 				CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */,
 				CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */,
 				CEAB2D4625CDD3D6008F0E78 /* ViewController.swift */,
@@ -76,6 +126,7 @@
 		CEAB2D5A25CDD641008F0E78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE8E75FF25CF0A2800459EDD /* New Group */,
 				CEAB2D5B25CDD658008F0E78 /* Contact.swift */,
 			);
 			path = Models;
@@ -152,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB2D4D25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld in Sources */,
+				CE8E760625CF2AF200459EDD /* ContactsViewModel.swift in Sources */,
 				CEAB2D4725CDD3D6008F0E78 /* ViewController.swift in Sources */,
 				CEAB2D5C25CDD658008F0E78 /* Contact.swift in Sources */,
 				CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */,
