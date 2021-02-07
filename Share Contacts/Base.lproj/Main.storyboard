@@ -1,24 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r0F-lS-uYe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Contacts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ContactsViewController" customModule="Share_Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3EB-dJ-wwG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Xl-wK-Jl2">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContactCollectionViewCell" id="hpu-UH-5N4" customClass="ContactCollectionViewCell" customModule="Share_Contacts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iIs-Jg-C7n">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oln-fh-8zW">
+                                                    <rect key="frame" x="10" y="5" width="108" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="EPO-UZ-uPH"/>
+                                                        <constraint firstAttribute="width" constant="108" id="loN-Xe-Fd9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rhulani" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOw-e8-vuR">
+                                                    <rect key="frame" x="10" y="100" width="108" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wOw-e8-vuR" firstAttribute="leading" secondItem="iIs-Jg-C7n" secondAttribute="leading" constant="10" id="31K-Fa-dv5"/>
+                                                <constraint firstAttribute="trailing" secondItem="oln-fh-8zW" secondAttribute="trailing" constant="10" id="6eS-2H-iSL"/>
+                                                <constraint firstItem="oln-fh-8zW" firstAttribute="leading" secondItem="iIs-Jg-C7n" secondAttribute="leading" constant="10" id="CLs-DF-bdB"/>
+                                                <constraint firstItem="wOw-e8-vuR" firstAttribute="top" secondItem="oln-fh-8zW" secondAttribute="bottom" constant="5" id="Wwd-LS-BB9"/>
+                                                <constraint firstAttribute="trailing" secondItem="wOw-e8-vuR" secondAttribute="trailing" constant="10" id="fqA-dC-8jk"/>
+                                                <constraint firstItem="oln-fh-8zW" firstAttribute="top" secondItem="iIs-Jg-C7n" secondAttribute="top" constant="5" id="jpV-ay-ZR0"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="contactImage" destination="oln-fh-8zW" id="uOo-hh-wza"/>
+                                            <outlet property="contactName" destination="wOw-e8-vuR" id="ptz-Gb-7Hr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rqd-1v-M3a"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zf1-ra-ypI"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3EB-dJ-wwG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gii-CR-CJ0"/>
+                            <constraint firstAttribute="bottom" secondItem="3EB-dJ-wwG" secondAttribute="bottom" id="dyV-os-ADL"/>
+                            <constraint firstAttribute="trailing" secondItem="3EB-dJ-wwG" secondAttribute="trailing" id="j8T-Ce-bdR"/>
+                            <constraint firstItem="3EB-dJ-wwG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mxH-Xt-fqk"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Contacts" leftItemsSupplementBackButton="YES" id="Sc1-ZS-oTa">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="kgw-0X-hiw">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="yh1-E3-G2P">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="addContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7R-cv-wZx"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <segue destination="z6G-f5-zAe" kind="show" id="DKH-6h-RXe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="3EB-dJ-wwG" id="DJA-kH-HgM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="442" y="68"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8J5-PL-iyy">
+            <objects>
+                <viewController storyboardIdentifier="AddContactViewViewController" id="z6G-f5-zAe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BTj-i2-KbY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JN7-0j-hmc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p3m-8b-vGr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVY-gK-GOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="748"/>
+        </scene>
+        <!--Contact Detail View Controller-->
+        <scene sceneID="ncp-Kk-Rvc">
+            <objects>
+                <viewController storyboardIdentifier="ContactDetailViewController" id="292-tS-EJs" customClass="ContactDetailViewController" customModule="Share_Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iGL-bQ-7Ug">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Kqi-fo-bLk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXS-wS-QgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="68"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cQo-q9-qtT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r0F-lS-uYe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1FQ-EJ-H5t">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iVg-2Z-qSR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ut-Qx-ghM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335" y="68"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

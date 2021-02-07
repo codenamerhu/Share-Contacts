@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CE8E760625CF2AF200459EDD /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */; };
+		CE8E760A25CF3DA700459EDD /* ContactsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760925CF3DA700459EDD /* ContactsError.swift */; };
+		CE8E760D25CFD55500459EDD /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760C25CFD55500459EDD /* ContactsViewController.swift */; };
+		CE8E761125D01D2E00459EDD /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E761025D01D2E00459EDD /* ContactCollectionViewCell.swift */; };
+		CEA4F04A25D04DFA00800BFF /* AddContactViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */; };
+		CEA4F04E25D069BF00800BFF /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */; };
 		CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */; };
 		CEAB2D4525CDD3D6008F0E78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */; };
 		CEAB2D4725CDD3D6008F0E78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4625CDD3D6008F0E78 /* ViewController.swift */; };
@@ -20,6 +25,11 @@
 
 /* Begin PBXFileReference section */
 		CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		CE8E760925CF3DA700459EDD /* ContactsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsError.swift; sourceTree = "<group>"; };
+		CE8E760C25CFD55500459EDD /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		CE8E761025D01D2E00459EDD /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewViewController.swift; sourceTree = "<group>"; };
+		CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		CEAB2D3F25CDD3D6008F0E78 /* Share Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +80,10 @@
 		CE8E760225CF0ACF00459EDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE8E760C25CFD55500459EDD /* ContactsViewController.swift */,
+				CE8E761025D01D2E00459EDD /* ContactCollectionViewCell.swift */,
+				CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */,
+				CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +133,7 @@
 				CEAB2D5025CDD3D7008F0E78 /* LaunchScreen.storyboard */,
 				CEAB2D5325CDD3D7008F0E78 /* Info.plist */,
 				CEAB2D4B25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld */,
+				CE8E760925CF3DA700459EDD /* ContactsError.swift */,
 			);
 			path = "Share Contacts";
 			sourceTree = "<group>";
@@ -203,11 +218,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB2D4D25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld in Sources */,
+				CE8E760A25CF3DA700459EDD /* ContactsError.swift in Sources */,
 				CE8E760625CF2AF200459EDD /* ContactsViewModel.swift in Sources */,
 				CEAB2D4725CDD3D6008F0E78 /* ViewController.swift in Sources */,
 				CEAB2D5C25CDD658008F0E78 /* Contact.swift in Sources */,
+				CE8E760D25CFD55500459EDD /* ContactsViewController.swift in Sources */,
 				CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */,
 				CEAB2D4525CDD3D6008F0E78 /* SceneDelegate.swift in Sources */,
+				CEA4F04E25D069BF00800BFF /* ContactDetailViewController.swift in Sources */,
+				CEA4F04A25D04DFA00800BFF /* AddContactViewViewController.swift in Sources */,
+				CE8E761125D01D2E00459EDD /* ContactCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33W4J75NUM;
+				DEVELOPMENT_TEAM = W5XNMDMSNN;
 				INFOPLIST_FILE = "Share Contacts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33W4J75NUM;
+				DEVELOPMENT_TEAM = W5XNMDMSNN;
 				INFOPLIST_FILE = "Share Contacts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
