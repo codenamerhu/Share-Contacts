@@ -265,7 +265,7 @@
                                                 <rect key="frame" x="0.0" y="290" width="414" height="606"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="phones" rowHeight="107" id="KnG-JW-WHy">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="phone" rowHeight="107" id="KnG-JW-WHy" customClass="PhoneTableViewCell" customModule="Share_Contacts" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="414" height="107"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KnG-JW-WHy" id="AU1-HJ-eLM">
@@ -276,8 +276,8 @@
                                                                     <rect key="frame" x="10" y="10" width="394" height="87"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="061 418 2582" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUM-MF-WmU">
-                                                                            <rect key="frame" x="10" y="30.5" width="105.5" height="20.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <rect key="frame" x="10" y="30.5" width="104" height="20"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                             <color key="textColor" systemColor="systemBlueColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -294,7 +294,9 @@
                                                                         <constraint firstItem="mUM-MF-WmU" firstAttribute="leading" secondItem="UEV-yw-QsM" secondAttribute="leading" constant="10" id="fZm-Fq-GfY"/>
                                                                         <constraint firstAttribute="height" constant="65" id="lDo-1q-QzE"/>
                                                                         <constraint firstItem="yP9-Im-jcX" firstAttribute="top" secondItem="UEV-yw-QsM" secondAttribute="top" constant="5" id="lYi-Jm-oFl"/>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yP9-Im-jcX" secondAttribute="trailing" constant="20" symbolic="YES" id="pop-iY-xFY"/>
                                                                         <constraint firstItem="yP9-Im-jcX" firstAttribute="leading" secondItem="UEV-yw-QsM" secondAttribute="leading" constant="10" id="uGn-Lf-yeG"/>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mUM-MF-WmU" secondAttribute="trailing" constant="20" symbolic="YES" id="unY-Oy-muY"/>
                                                                     </constraints>
                                                                 </view>
                                                             </subviews>
@@ -305,8 +307,16 @@
                                                                 <constraint firstItem="UEV-yw-QsM" firstAttribute="leading" secondItem="AU1-HJ-eLM" secondAttribute="leading" constant="10" id="xNI-1h-Ka8"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="phoneLabel" destination="yP9-Im-jcX" id="JJD-5w-XT0"/>
+                                                            <outlet property="phoneNumber" destination="mUM-MF-WmU" id="vbH-8z-86R"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="292-tS-EJs" id="ZJB-kA-9ij"/>
+                                                    <outlet property="delegate" destination="292-tS-EJs" id="iqm-0w-IbZ"/>
+                                                </connections>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -352,6 +362,7 @@
                         <outlet property="contactImage" destination="UXv-Hf-6sY" id="fHE-ph-K7w"/>
                         <outlet property="contactName" destination="gMD-59-BWS" id="Imw-lB-RzN"/>
                         <outlet property="editButton" destination="x4Y-jV-fFA" id="PZM-ID-NMB"/>
+                        <outlet property="tableView" destination="4Qy-DG-4ic" id="YN8-6x-eYy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXS-wS-QgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

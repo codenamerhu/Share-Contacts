@@ -85,7 +85,7 @@ class ContactsViewModel {
                         }
                         DispatchQueue.main.async {
                             fetchedContacts.append(MyContact(firstName: contact.givenName, lastName: contact.familyName, contactImage: imageData, contactThumbnail: thumbnaiImageData, cellPhone: mobile,tellephone: telephone, mainPhone: main, homePhone: home, workPhone: work, otherPhone: other))
-                            contactResponseHandler(MyContact(firstName: contact.givenName, lastName: contact.familyName, contactImage: imageData, contactThumbnail: thumbnaiImageData, cellPhone: "\(contact.phoneNumbers)"), nil)
+                            contactResponseHandler(MyContact(firstName: contact.givenName, lastName: contact.familyName, contactImage: imageData, contactThumbnail: thumbnaiImageData, cellPhone: mobile,tellephone: telephone, mainPhone: main, homePhone: home, workPhone: work, otherPhone: other), nil)
                         }
                         
                     })
