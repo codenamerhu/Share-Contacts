@@ -9,9 +9,16 @@ import Foundation
 import UIKit
 
 struct MyContact {
-    var firstName           : String
-    var lastName            : String
+    var firstName           : String?
+    var lastName            : String?
     var contactImage        : Data?
     var contactThumbnail    : Data?
-    var cellPhone           : String
+    
+    var cellPhone           : String?
+    var tellephone          : String?
+    var mainPhone           : String?
+    var homePhone           : String?
+    var workPhone           : String?
+    var otherPhone          : String?
+    
 }

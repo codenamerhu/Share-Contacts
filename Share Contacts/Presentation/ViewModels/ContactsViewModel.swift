@@ -33,14 +33,40 @@ class ContactsViewModel {
                 do {
                     try cStore?.enumerateContacts(with: request, usingBlock: {(contact, stopPointer) in
                         
-                        var phoneNumber: String?
+                        var mobile: String?
+                        var main: String?
+                        var home: String?
+                        var work: String?
+                        var telephone: String?
+                        var other: String?
                         
                         print(contact.givenName)
                         for phone in contact.phoneNumbers {
                             if var label = phone.label {
                                 label = CNLabeledValue<CNPhoneNumber>.localizedString(forLabel: label)
                                 
-                                print(" tt ", label, phone.value.stringValue)
+                                if label == "mobile" {
+                                    mobile = phone.value.stringValue
+                                }
+                                
+                                if label == "main" {
+                                    main = phone.value.stringValue
+                                }
+                                
+                                if label == "home" {
+                                    home = phone.value.stringValue
+                                }
+                                
+                                if label == "work" {
+                                    work = phone.value.stringValue
+                                }
+                                
+                                if label == "other" {
+                                    other = phone.value.stringValue
+                                }
+                                if label == "telephone" {
+                                    telephone = phone.value.stringValue
+                                }
                             }
                         }
                         
@@ -58,7 +84,7 @@ class ContactsViewModel {
                             }
                         }
                         DispatchQueue.main.async {
-                            fetchedContacts.append(MyContact(firstName: contact.givenName, lastName: contact.familyName, contactImage: imageData, contactThumbnail: thumbnaiImageData, cellPhone: "\(contact.phoneNumbers)"))
+                            fetchedContacts.append(MyContact(firstName: contact.givenName, lastName: contact.familyName, contactImage: imageData, contactThumbnail: thumbnaiImageData, cellPhone: mobile,tellephone: telephone, mainPhone: main, homePhone: home, workPhone: work, otherPhone: other))
                             contactResponseHandler(MyContact(firstName: contact.givenName, lastName: contact.familyName, contactImage: imageData, contactThumbnail: thumbnaiImageData, cellPhone: "\(contact.phoneNumbers)"), nil)
                         }
                         

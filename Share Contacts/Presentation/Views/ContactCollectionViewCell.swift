@@ -34,6 +34,12 @@ class ContactCollectionViewCell: UICollectionViewCell {
         contactImage.clipsToBounds = true
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        contactImage.image = nil
+    }
+    
 }
 
 

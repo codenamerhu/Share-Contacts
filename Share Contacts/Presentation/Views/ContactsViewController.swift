@@ -39,6 +39,11 @@ class ContactsViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func setupSearch() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -64,7 +69,6 @@ extension ContactsViewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContactCollectionViewCell.identifier, for: indexPath) as! ContactCollectionViewCell
-        
         cell.contacts = myContacts[indexPath.row]
         return cell
     }
@@ -72,7 +76,7 @@ extension ContactsViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let contactDetialView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: ContactDetailViewController.identifier) as! ContactDetailViewController
-        contactDetialView.myContact = myContacts[indexPath.row]
+        contactDetialView.contact = myContacts[indexPath.row]
         
         self.navigationController?.pushViewController(contactDetialView, animated: true)
     }
