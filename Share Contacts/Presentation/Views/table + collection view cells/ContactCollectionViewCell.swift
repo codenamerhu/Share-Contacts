@@ -20,8 +20,6 @@ class ContactCollectionViewCell: UICollectionViewCell {
             
             if let thumbail = contacts?.contactThumbnail {
                 contactImage.image = UIImage(data: thumbail)
-            } else {
-                contactImage.load(url: URL(string: "https://picsum.photos/200")!)
             }
         }
     }
@@ -37,7 +35,7 @@ class ContactCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
 
-        contactImage.image = nil
+        contactImage.image = UIImage(named: "no image")
     }
     
 }

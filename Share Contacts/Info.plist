@@ -20,6 +20,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Share Contacts would like to access your camera</string>
 	<key>NSContactsUsageDescription</key>
 	<string>Share contacts would like to get access to your contacts</string>
 	<key>UIApplicationSceneManifest</key>

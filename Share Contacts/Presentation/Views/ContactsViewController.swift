@@ -16,6 +16,7 @@ class ContactsViewController: UIViewController {
     
     var myContacts          = [MyContact]()
     var contactsViewModel   = ContactsViewModel()
+    var qrCodeImage: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()

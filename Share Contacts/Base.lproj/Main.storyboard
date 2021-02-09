@@ -34,7 +34,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oln-fh-8zW">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no image" translatesAutoresizingMaskIntoConstraints="NO" id="oln-fh-8zW">
                                                     <rect key="frame" x="10" y="5" width="108" height="90"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="90" id="EPO-UZ-uPH"/>
@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="442" y="68"/>
         </scene>
-        <!--View Controller-->
+        <!--Code Add Contact View Controller-->
         <scene sceneID="8J5-PL-iyy">
             <objects>
-                <viewController storyboardIdentifier="AddContactViewViewController" id="z6G-f5-zAe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddContactViewViewController" id="z6G-f5-zAe" customClass="QRCodeAddContactViewController" customModule="Share_Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BTj-i2-KbY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,6 +117,21 @@
             </objects>
             <point key="canvasLocation" x="441" y="748"/>
         </scene>
+        <!--Edit Contact View Controller-->
+        <scene sceneID="zCy-nR-YdP">
+            <objects>
+                <viewController storyboardIdentifier="EditContactViewController" id="tZc-sw-JIv" customClass="EditContactViewController" customModule="Share_Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LVl-xN-N5F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="u6N-5t-FI4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ys-tH-5tc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200" y="748"/>
+        </scene>
         <!--Contact Detail View Controller-->
         <scene sceneID="ncp-Kk-Rvc">
             <objects>
@@ -128,13 +143,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N70-QQ-eSC" userLabel="nav">
                                 <rect key="frame" x="0.0" y="44" width="414" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-0e-y0S">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-0e-y0S">
                                         <rect key="frame" x="10" y="5" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="h0F-x6-Bwz"/>
                                             <constraint firstAttribute="height" constant="30" id="kN7-uG-oCT"/>
                                         </constraints>
-                                        <state key="normal" title="&lt;"/>
+                                        <state key="normal" title="&lt;" image="back"/>
                                         <connections>
                                             <action selector="back:" destination="292-tS-EJs" eventType="touchUpInside" id="2s8-hS-BGz"/>
                                         </connections>
@@ -166,7 +181,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjR-xc-gA1">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UXv-Hf-6sY">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no image" translatesAutoresizingMaskIntoConstraints="NO" id="UXv-Hf-6sY">
                                                         <rect key="frame" x="147" y="10" width="120" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="5l9-Da-FMc"/>
@@ -246,6 +261,9 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haM-56-K24">
                                                                 <rect key="frame" x="10" y="10" width="73.5" height="50"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                                <connections>
+                                                                    <action selector="ahare:" destination="292-tS-EJs" eventType="touchUpInside" id="GfL-ia-tzo"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -369,6 +387,45 @@
             </objects>
             <point key="canvasLocation" x="1273.913043478261" y="67.633928571428569"/>
         </scene>
+        <!--Code Share View Controller-->
+        <scene sceneID="9Wg-dY-iaD">
+            <objects>
+                <viewController storyboardIdentifier="QRCodeShareViewController" id="o1g-ba-GFI" customClass="QRCodeShareViewController" customModule="Share_Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vcx-UM-EXz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCp-iw-k9x">
+                                <rect key="frame" x="42" y="305" width="331" height="287"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILi-gj-MfZ">
+                                <rect key="frame" x="20" y="54" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BF3-uY-Sx2"/>
+                                    <constraint firstAttribute="width" constant="30" id="xNK-cj-JUY"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="goBack:" destination="o1g-ba-GFI" eventType="touchUpInside" id="cIr-2k-DCG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L9z-fL-7KL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ILi-gj-MfZ" firstAttribute="leading" secondItem="L9z-fL-7KL" secondAttribute="leading" constant="20" id="FcX-mK-640"/>
+                            <constraint firstItem="ILi-gj-MfZ" firstAttribute="top" secondItem="L9z-fL-7KL" secondAttribute="top" constant="10" id="PF4-M9-fQl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="qrCodeImage" destination="dCp-iw-k9x" id="wF7-Ra-r8I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VeA-E4-qde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959.4202898550727" y="68.303571428571431"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cQo-q9-qtT">
             <objects>
@@ -389,6 +446,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="100" height="100"/>
+        <image name="no image" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

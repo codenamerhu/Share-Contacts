@@ -15,6 +15,8 @@ class ContactsViewModel {
     let cKeys = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactImageDataAvailableKey, CNContactImageDataKey, CNContactThumbnailImageDataKey, CNContactPhoneNumbersKey]
     
     var fetchedContacts = [MyContact]()
+    var getQRCodeImage: QRCode?
+    var clientAPI = ClientSideAPI()
     
     func fetchContactcs(contactResponseHandler: @escaping (MyContact?, ContactsError?) -> Void) {
         
@@ -97,5 +99,23 @@ class ContactsViewModel {
     
     
     func numberOfContacts() -> Int { return fetchedContacts.count }
+    
+    func qRCodeImage(params: String) -> UIImage {
+        
+        var image = UIImage()
+        clientAPI.getRequest(params: params) { (qrCode) in
+            
+            
+            
+            if let data = qrCode?.imageBase64 {
+                
+                
+                //image = UIImage(data: data)!
+            }
+            
+        }
+        
+        return image
+    }
     
 }

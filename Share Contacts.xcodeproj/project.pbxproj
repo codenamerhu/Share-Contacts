@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE894C3F25D2AAFB00F236CB /* QRCodeShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE894C3E25D2AAFB00F236CB /* QRCodeShareViewController.swift */; };
+		CE894C6025D2D30300F236CB /* QRCodeAddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE894C5F25D2D30300F236CB /* QRCodeAddContactViewController.swift */; };
 		CE8E760625CF2AF200459EDD /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */; };
 		CE8E760A25CF3DA700459EDD /* ContactsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760925CF3DA700459EDD /* ContactsError.swift */; };
 		CE8E760D25CFD55500459EDD /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760C25CFD55500459EDD /* ContactsViewController.swift */; };
 		CE8E761125D01D2E00459EDD /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E761025D01D2E00459EDD /* ContactCollectionViewCell.swift */; };
+		CE9D4B5A25D2E00F0096E0FB /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D4B5925D2E00F0096E0FB /* EditContactViewController.swift */; };
 		CEA4F04A25D04DFA00800BFF /* AddContactViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */; };
 		CEA4F04E25D069BF00800BFF /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */; };
 		CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */; };
@@ -22,13 +25,19 @@
 		CEAB2D5225CDD3D7008F0E78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAB2D5025CDD3D7008F0E78 /* LaunchScreen.storyboard */; };
 		CEAB2D5C25CDD658008F0E78 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D5B25CDD658008F0E78 /* Contact.swift */; };
 		CEAEBBDF25D1BDD100B45B83 /* PhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEBBDE25D1BDD100B45B83 /* PhoneTableViewCell.swift */; };
+		CEAEBBE225D2609200B45B83 /* ClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEBBE125D2609200B45B83 /* ClientAPI.swift */; };
+		CEAEBBE525D2612600B45B83 /* ClientSideAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEBBE425D2612600B45B83 /* ClientSideAPIProtocol.swift */; };
+		CEAEBBE825D2710100B45B83 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEBBE725D2710000B45B83 /* QRCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE894C3E25D2AAFB00F236CB /* QRCodeShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeShareViewController.swift; sourceTree = "<group>"; };
+		CE894C5F25D2D30300F236CB /* QRCodeAddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAddContactViewController.swift; sourceTree = "<group>"; };
 		CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		CE8E760925CF3DA700459EDD /* ContactsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsError.swift; sourceTree = "<group>"; };
 		CE8E760C25CFD55500459EDD /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		CE8E761025D01D2E00459EDD /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE9D4B5925D2E00F0096E0FB /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 		CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewViewController.swift; sourceTree = "<group>"; };
 		CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		CEAB2D3F25CDD3D6008F0E78 /* Share Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +51,9 @@
 		CEAB2D5325CDD3D7008F0E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAB2D5B25CDD658008F0E78 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		CEAEBBDE25D1BDD100B45B83 /* PhoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTableViewCell.swift; sourceTree = "<group>"; };
+		CEAEBBE125D2609200B45B83 /* ClientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAPI.swift; sourceTree = "<group>"; };
+		CEAEBBE425D2612600B45B83 /* ClientSideAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSideAPIProtocol.swift; sourceTree = "<group>"; };
+		CEAEBBE725D2710000B45B83 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,9 @@
 				CE8E760C25CFD55500459EDD /* ContactsViewController.swift */,
 				CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */,
 				CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */,
+				CE894C3E25D2AAFB00F236CB /* QRCodeShareViewController.swift */,
+				CE894C5F25D2D30300F236CB /* QRCodeAddContactViewController.swift */,
+				CE9D4B5925D2E00F0096E0FB /* EditContactViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +116,8 @@
 		CE8E760425CF0AEC00459EDD /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CEAEBBE125D2609200B45B83 /* ClientAPI.swift */,
+				CEAEBBE425D2612600B45B83 /* ClientSideAPIProtocol.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -145,6 +162,7 @@
 			children = (
 				CE8E75FF25CF0A2800459EDD /* New Group */,
 				CEAB2D5B25CDD658008F0E78 /* Contact.swift */,
+				CEAEBBE725D2710000B45B83 /* QRCode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,17 +247,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB2D4D25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld in Sources */,
+				CE894C6025D2D30300F236CB /* QRCodeAddContactViewController.swift in Sources */,
 				CE8E760A25CF3DA700459EDD /* ContactsError.swift in Sources */,
 				CE8E760625CF2AF200459EDD /* ContactsViewModel.swift in Sources */,
 				CEAB2D4725CDD3D6008F0E78 /* ViewController.swift in Sources */,
+				CE9D4B5A25D2E00F0096E0FB /* EditContactViewController.swift in Sources */,
 				CEAEBBDF25D1BDD100B45B83 /* PhoneTableViewCell.swift in Sources */,
 				CEAB2D5C25CDD658008F0E78 /* Contact.swift in Sources */,
 				CE8E760D25CFD55500459EDD /* ContactsViewController.swift in Sources */,
 				CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */,
+				CEAEBBE525D2612600B45B83 /* ClientSideAPIProtocol.swift in Sources */,
 				CEAB2D4525CDD3D6008F0E78 /* SceneDelegate.swift in Sources */,
+				CE894C3F25D2AAFB00F236CB /* QRCodeShareViewController.swift in Sources */,
 				CEA4F04E25D069BF00800BFF /* ContactDetailViewController.swift in Sources */,
 				CEA4F04A25D04DFA00800BFF /* AddContactViewViewController.swift in Sources */,
+				CEAEBBE225D2609200B45B83 /* ClientAPI.swift in Sources */,
 				CE8E761125D01D2E00459EDD /* ContactCollectionViewCell.swift in Sources */,
+				CEAEBBE825D2710100B45B83 /* QRCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5XNMDMSNN;
 				INFOPLIST_FILE = "Share Contacts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5XNMDMSNN;
 				INFOPLIST_FILE = "Share Contacts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
