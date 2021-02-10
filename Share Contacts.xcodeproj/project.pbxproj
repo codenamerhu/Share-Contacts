@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE894C3F25D2AAFB00F236CB /* QRCodeShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE894C3E25D2AAFB00F236CB /* QRCodeShareViewController.swift */; };
+		CE894C6025D2D30300F236CB /* QRCodeAddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE894C5F25D2D30300F236CB /* QRCodeAddContactViewController.swift */; };
+		CE8E760625CF2AF200459EDD /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */; };
+		CE8E760A25CF3DA700459EDD /* ContactsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760925CF3DA700459EDD /* ContactsError.swift */; };
+		CE8E760D25CFD55500459EDD /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E760C25CFD55500459EDD /* ContactsViewController.swift */; };
+		CE8E761125D01D2E00459EDD /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E761025D01D2E00459EDD /* ContactCollectionViewCell.swift */; };
+		CE9D4B5A25D2E00F0096E0FB /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D4B5925D2E00F0096E0FB /* EditContactViewController.swift */; };
+		CEA4F04A25D04DFA00800BFF /* AddContactViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */; };
+		CEA4F04E25D069BF00800BFF /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */; };
+		CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */; };
+		CEAB2D4525CDD3D6008F0E78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */; };
+		CEAB2D4725CDD3D6008F0E78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4625CDD3D6008F0E78 /* ViewController.swift */; };
+		CEAB2D4A25CDD3D6008F0E78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAB2D4825CDD3D6008F0E78 /* Main.storyboard */; };
+		CEAB2D4D25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D4B25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld */; };
+		CEAB2D4F25CDD3D7008F0E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAB2D4E25CDD3D7008F0E78 /* Assets.xcassets */; };
+		CEAB2D5225CDD3D7008F0E78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAB2D5025CDD3D7008F0E78 /* LaunchScreen.storyboard */; };
+		CEAB2D5C25CDD658008F0E78 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB2D5B25CDD658008F0E78 /* Contact.swift */; };
+		CEAEBBDF25D1BDD100B45B83 /* PhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEBBDE25D1BDD100B45B83 /* PhoneTableViewCell.swift */; };
+		CEAEBBE225D2609200B45B83 /* ClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEBBE125D2609200B45B83 /* ClientAPI.swift */; };
+		CEAEBBE525D2612600B45B83 /* ClientSideAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEBBE425D2612600B45B83 /* ClientSideAPIProtocol.swift */; };
+		CEAEBBE825D2710100B45B83 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEBBE725D2710000B45B83 /* QRCode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE894C3E25D2AAFB00F236CB /* QRCodeShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeShareViewController.swift; sourceTree = "<group>"; };
+		CE894C5F25D2D30300F236CB /* QRCodeAddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAddContactViewController.swift; sourceTree = "<group>"; };
+		CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		CE8E760925CF3DA700459EDD /* ContactsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsError.swift; sourceTree = "<group>"; };
+		CE8E760C25CFD55500459EDD /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		CE8E761025D01D2E00459EDD /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE9D4B5925D2E00F0096E0FB /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
+		CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewViewController.swift; sourceTree = "<group>"; };
+		CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		CEAB2D3F25CDD3D6008F0E78 /* Share Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEAB2D4625CDD3D6008F0E78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEAB2D4925CDD3D6008F0E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEAB2D4C25CDD3D6008F0E78 /* Share_Contacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Share_Contacts.xcdatamodel; sourceTree = "<group>"; };
+		CEAB2D4E25CDD3D7008F0E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEAB2D5125CDD3D7008F0E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEAB2D5325CDD3D7008F0E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAB2D5B25CDD658008F0E78 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		CEAEBBDE25D1BDD100B45B83 /* PhoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTableViewCell.swift; sourceTree = "<group>"; };
+		CEAEBBE125D2609200B45B83 /* ClientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAPI.swift; sourceTree = "<group>"; };
+		CEAEBBE425D2612600B45B83 /* ClientSideAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSideAPIProtocol.swift; sourceTree = "<group>"; };
+		CEAEBBE725D2710000B45B83 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEAB2D3C25CDD3D6008F0E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE8E75FF25CF0A2800459EDD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CE8E760025CF0ABA00459EDD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB2D5A25CDD641008F0E78 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CE8E760125CF0AC400459EDD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E760225CF0ACF00459EDD /* Views */,
+				CE8E760325CF0AD700459EDD /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE8E760225CF0ACF00459EDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEAEBBDD25D1BD5E00B45B83 /* table + collection view cells */,
+				CE8E760C25CFD55500459EDD /* ContactsViewController.swift */,
+				CEA4F04925D04DFA00800BFF /* AddContactViewViewController.swift */,
+				CEA4F04D25D069BE00800BFF /* ContactDetailViewController.swift */,
+				CE894C3E25D2AAFB00F236CB /* QRCodeShareViewController.swift */,
+				CE894C5F25D2D30300F236CB /* QRCodeAddContactViewController.swift */,
+				CE9D4B5925D2E00F0096E0FB /* EditContactViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE8E760325CF0AD700459EDD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E760525CF2AF200459EDD /* ContactsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE8E760425CF0AEC00459EDD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CEAEBBE125D2609200B45B83 /* ClientAPI.swift */,
+				CEAEBBE425D2612600B45B83 /* ClientSideAPIProtocol.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CEAB2D3625CDD3D6008F0E78 = {
+			isa = PBXGroup;
+			children = (
+				CEAB2D4125CDD3D6008F0E78 /* Share Contacts */,
+				CEAB2D4025CDD3D6008F0E78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEAB2D4025CDD3D6008F0E78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB2D3F25CDD3D6008F0E78 /* Share Contacts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEAB2D4125CDD3D6008F0E78 /* Share Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E760425CF0AEC00459EDD /* Data */,
+				CE8E760125CF0AC400459EDD /* Presentation */,
+				CE8E760025CF0ABA00459EDD /* Domain */,
+				CEAB2D4225CDD3D6008F0E78 /* AppDelegate.swift */,
+				CEAB2D4425CDD3D6008F0E78 /* SceneDelegate.swift */,
+				CEAB2D4625CDD3D6008F0E78 /* ViewController.swift */,
+				CEAB2D4825CDD3D6008F0E78 /* Main.storyboard */,
+				CEAB2D4E25CDD3D7008F0E78 /* Assets.xcassets */,
+				CEAB2D5025CDD3D7008F0E78 /* LaunchScreen.storyboard */,
+				CEAB2D5325CDD3D7008F0E78 /* Info.plist */,
+				CEAB2D4B25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld */,
+				CE8E760925CF3DA700459EDD /* ContactsError.swift */,
+			);
+			path = "Share Contacts";
+			sourceTree = "<group>";
+		};
+		CEAB2D5A25CDD641008F0E78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E75FF25CF0A2800459EDD /* New Group */,
+				CEAB2D5B25CDD658008F0E78 /* Contact.swift */,
+				CEAEBBE725D2710000B45B83 /* QRCode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEAEBBDD25D1BD5E00B45B83 /* table + collection view cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E761025D01D2E00459EDD /* ContactCollectionViewCell.swift */,
+				CEAEBBDE25D1BDD100B45B83 /* PhoneTableViewCell.swift */,
+			);
+			path = "table + collection view cells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEAB2D3E25CDD3D6008F0E78 /* Share Contacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAB2D5625CDD3D7008F0E78 /* Build configuration list for PBXNativeTarget "Share Contacts" */;
+			buildPhases = (
+				CEAB2D3B25CDD3D6008F0E78 /* Sources */,
+				CEAB2D3C25CDD3D6008F0E78 /* Frameworks */,
+				CEAB2D3D25CDD3D6008F0E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Share Contacts";
+			productName = "Share Contacts";
+			productReference = CEAB2D3F25CDD3D6008F0E78 /* Share Contacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEAB2D3725CDD3D6008F0E78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CEAB2D3E25CDD3D6008F0E78 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CEAB2D3A25CDD3D6008F0E78 /* Build configuration list for PBXProject "Share Contacts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEAB2D3625CDD3D6008F0E78;
+			productRefGroup = CEAB2D4025CDD3D6008F0E78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEAB2D3E25CDD3D6008F0E78 /* Share Contacts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEAB2D3D25CDD3D6008F0E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAB2D5225CDD3D7008F0E78 /* LaunchScreen.storyboard in Resources */,
+				CEAB2D4F25CDD3D7008F0E78 /* Assets.xcassets in Resources */,
+				CEAB2D4A25CDD3D6008F0E78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEAB2D3B25CDD3D6008F0E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAB2D4D25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld in Sources */,
+				CE894C6025D2D30300F236CB /* QRCodeAddContactViewController.swift in Sources */,
+				CE8E760A25CF3DA700459EDD /* ContactsError.swift in Sources */,
+				CE8E760625CF2AF200459EDD /* ContactsViewModel.swift in Sources */,
+				CEAB2D4725CDD3D6008F0E78 /* ViewController.swift in Sources */,
+				CE9D4B5A25D2E00F0096E0FB /* EditContactViewController.swift in Sources */,
+				CEAEBBDF25D1BDD100B45B83 /* PhoneTableViewCell.swift in Sources */,
+				CEAB2D5C25CDD658008F0E78 /* Contact.swift in Sources */,
+				CE8E760D25CFD55500459EDD /* ContactsViewController.swift in Sources */,
+				CEAB2D4325CDD3D6008F0E78 /* AppDelegate.swift in Sources */,
+				CEAEBBE525D2612600B45B83 /* ClientSideAPIProtocol.swift in Sources */,
+				CEAB2D4525CDD3D6008F0E78 /* SceneDelegate.swift in Sources */,
+				CE894C3F25D2AAFB00F236CB /* QRCodeShareViewController.swift in Sources */,
+				CEA4F04E25D069BF00800BFF /* ContactDetailViewController.swift in Sources */,
+				CEA4F04A25D04DFA00800BFF /* AddContactViewViewController.swift in Sources */,
+				CEAEBBE225D2609200B45B83 /* ClientAPI.swift in Sources */,
+				CE8E761125D01D2E00459EDD /* ContactCollectionViewCell.swift in Sources */,
+				CEAEBBE825D2710100B45B83 /* QRCode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEAB2D4825CDD3D6008F0E78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAB2D4925CDD3D6008F0E78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEAB2D5025CDD3D7008F0E78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAB2D5125CDD3D7008F0E78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEAB2D5425CDD3D7008F0E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEAB2D5525CDD3D7008F0E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEAB2D5725CDD3D7008F0E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5XNMDMSNN;
+				INFOPLIST_FILE = "Share Contacts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codenamerhu.Share-Contacts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEAB2D5825CDD3D7008F0E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5XNMDMSNN;
+				INFOPLIST_FILE = "Share Contacts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codenamerhu.Share-Contacts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEAB2D3A25CDD3D6008F0E78 /* Build configuration list for PBXProject "Share Contacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAB2D5425CDD3D7008F0E78 /* Debug */,
+				CEAB2D5525CDD3D7008F0E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAB2D5625CDD3D7008F0E78 /* Build configuration list for PBXNativeTarget "Share Contacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAB2D5725CDD3D7008F0E78 /* Debug */,
+				CEAB2D5825CDD3D7008F0E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEAB2D4B25CDD3D6008F0E78 /* Share_Contacts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEAB2D4C25CDD3D6008F0E78 /* Share_Contacts.xcdatamodel */,
+			);
+			currentVersion = CEAB2D4C25CDD3D6008F0E78 /* Share_Contacts.xcdatamodel */;
+			path = Share_Contacts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEAB2D3725CDD3D6008F0E78 /* Project object */;
+}
